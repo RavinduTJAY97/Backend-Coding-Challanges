@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Box, Typography, Grid, TextField, Button,Snackbar } from "@mui/material";
 import axios from "axios";
 import { ProgressBar } from "react-bootstrap";
+import AttendanceDetailTable from "../../components/Table";
 
 // components
 // import Header from "../layouts/Header";
@@ -95,6 +96,9 @@ export default function ChallengeOne() {
             Submit
           </Button>
         </Grid>
+      </Box>
+      <Box>
+      <AttendanceDetailTable/>
       </Box>
     </>
   );
