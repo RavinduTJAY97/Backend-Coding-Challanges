@@ -21,3 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // csv import
 Route::post('/upload-csv-file', 'App\Http\Controllers\AttendanceController@csvImport');
+// return attendance data
+Route::get('/get/attendance/details', 'App\Http\Controllers\AttendanceController@returnAttendanceDetails');

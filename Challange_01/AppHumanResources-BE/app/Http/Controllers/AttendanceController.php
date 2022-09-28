@@ -12,4 +12,10 @@ class AttendanceController extends Controller
         $data = AttendanceService::uploadCSV($request);
         return $data;
     }
+
+    public function returnAttendanceDetails(Request $request)
+    {
+        $data = AttendanceService::returnAttendanceDetails($request);
+        return $data;
+    }
 }
