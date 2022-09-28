@@ -12,4 +12,9 @@ class Attendance extends Model
         'employee_id',
         'schedule_id',
     ];
+
+    public function schedule()
+    {
+        return $this->belongsTo('App\Models\Attendance\Domain\Schedule');
+    }
 }
