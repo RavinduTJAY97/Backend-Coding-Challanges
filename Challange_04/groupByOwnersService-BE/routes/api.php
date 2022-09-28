@@ -17,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//get document details group by owners
+Route::get('/get/document/details/group/by/owners', 'App\Http\Controllers\GroupByOwnerController@getGroupByOwners');
