@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('/get/most/occurrences', 'App\Http\Controllers\ServiceController@returnMultipleOccurrence');
